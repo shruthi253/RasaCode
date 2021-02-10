@@ -1,0 +1,86 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inform
+  - out_of_scope
+  - thankyou
+
+slots:
+  confirm_shopping:
+    type: any
+  item_category:
+    type: any
+  item_name:
+    type: any
+  amount_spent:
+    type: any
+  item_quantity:
+    type: any
+
+entities:
+  - category
+  - itemname
+  - quantity  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? Its time for your inventory list check, would you like to answer a few questions on it?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_confirm_shopping:
+  - text: "Did you shop yesterday?"
+
+  utter_item_category:
+  - text: "Which category it belongs to: Veggies/Dairy/Flours/Cereals/Fruits ?"
+
+  utter_item_name:
+  - text: "Can you tell the item name you bought?"
+
+  utter_amount_spent:
+  - text: "How much is the cost?"
+
+  utter_item_quantity:
+  - text: "How much quantity you bought?"
+
+  utter_slot_values:
+  - text: "Here is your inventory list\n
+           Your shopping status: {confirm_shopping}\n
+           Category you bought: {item_category}\n
+           Item you bought is: {item_name}\n
+           The amount spent is: {amount_spent}\n
+           Item quantity is: {item_quantity} "
+
+  utter_no worries:
+  - text: "No problem :)"
+
+  utter_continue:
+  - text: "Sorry I didn't understand that. Do you want to coninue?"
+
+forms:
+  - inventory_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

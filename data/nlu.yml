@@ -1,0 +1,162 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - whats up
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure thing
+    - sure
+    - correct
+    - ok
+    - fine
+    - great
+    - pretty good
+    - I bet
+    
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - could be better
+    - not satisfied
+    - not ok
+    - need improvement
+    - absolutely not
+    - nope
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: thankyou
+  examples: |
+    - thanks dude
+    - thanks
+    - tq
+    - many thanks
+    - super 
+
+- intent: inform
+  examples:
+    - I bought some [veggies] (category)
+    - I bought some [dairy] (category)
+    - I bought some [flours] (category)
+    - I bought some [cereals] (category)
+    - I bought some [fruits] (category)
+    - Bought [potato] (itemname)
+    - Bought [beetroot] (itemname)
+    - Bought [carrot] (itemname)
+    - Bought [cabbage] (itemname)
+    - Bought [spinach] (itemname)
+    - Bought [milk] (itemname)
+    - Bought [curd] (itemname)
+    - Bought [cheese] (itemname)
+    - Bought [apple] (itemname)
+    - Bought [orange] (itemname)
+    - Bought [banana] (itemname)
+    - Bought [chilly powder] (itemname)
+    - Bought [turmeric powder] (itemname)
+    - Bought [corriander powder] (itemname)
+    - Bought [garam masala] (itemname)
+    - Bought [wheat] (itemname)
+    - Bought [rice] (itemname)
+    - Bought [oats] (itemname)
+    - Bought [mango] (itemname)
+    - Bought [corn] (itemname)
+    - it is [2 Kg] (quantity)
+    - it is [1 Kg] (quantity)
+    - it is [1 ltr] (quantity)
+    - it is [2 ltr] (quantity)
+    - it is [2 pieces] (quantity)
+    - it is [3 pieces] (quantity)
+    - it is [2 packetsg] (quantity)
+    - it is [1 packet] (quantity)
+
+- intent: out_of_scope
+  examples:
+    - I donno
+    - You are no help
+    - I changed my mind
+    - Not interested
+    - None of your business
+    - i dont like to answer that
+    - tell me the weather
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
